@@ -1,0 +1,3 @@
+
+Select count(DISTINCT taster_name)
+from winemag.review

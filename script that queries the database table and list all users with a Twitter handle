@@ -1,0 +1,2 @@
+SELECT * FROM winemag.review
+WHERE taster_twitter_handle LIKE '@%';

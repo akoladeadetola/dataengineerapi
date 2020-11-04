@@ -1,0 +1,11 @@
+
+
+-- drop tables
+DROP TABLE IF EXISTS winemag.review;
+DROP TABLE IF EXISTS account.name;
+
+
+-- drop the schemas
+
+DROP SCHEMA IF EXISTS winemag;
+DROP SCHEMA IF EXISTS account;

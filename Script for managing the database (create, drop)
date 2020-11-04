@@ -1,0 +1,40 @@
+CREATE DATABASE Interview2;
+GO
+
+/* Change to the Music database */
+USE Interview2;
+GO
+
+CREATE SCHEMA winemag;
+go
+
+CREATE SCHEMA account;
+go
+
+CREATE TABLE winemag.review (
+    points INT,
+	title varchar(255) NOT NULL,
+    description varchar(255) NOT NULL,
+    taster_name varchar(255) NOT NULL,
+    taster_twitter_handle varchar(255) NOT NULL,
+    price INT NULL,
+    designation varchar(255) NOT NULL,
+    variety varchar(255) NOT NULL,
+    region_1 varchar(255),
+    region_2 varchar(255),
+    province varchar(255),
+    country varchar(255),
+    winery varchar(255) NOT NULL,
+  
+     
+);
+
+CREATE TABLE account.name (
+	id INT IDENTITY (1, 1) PRIMARY KEY,
+	username VARCHAR (255) NOT NULL,
+    description VARCHAR (255) NOT NULL,
+    profile_imageurl VARCHAR (255) NOT NULL,
+    followers_count INT
+
+);
+GO 
